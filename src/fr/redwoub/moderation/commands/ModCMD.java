@@ -17,14 +17,14 @@ public class ModCMD implements CommandExecutor {
 
         Player player = (Player) sender;
 
-        if(Main.moderateur.contains(player.getUniqueId())){
-            Main.moderateur.remove(player.getUniqueId());
+        if(Main.getInstance().moderateur.contains(player.getUniqueId())){
+            Main.getInstance().moderateur.remove(player.getUniqueId());
             player.getInventory().clear();
             player.sendMessage("§cVous n'etes plus en mode modération !");
             //give inventaire
             return false;
         }
-        Main.moderateur.add(player.getUniqueId());
+        Main.getInstance().moderateur.add(player.getUniqueId());
         player.sendMessage("§aVous etes en mode modération !");
         //save inventaire
         return false;

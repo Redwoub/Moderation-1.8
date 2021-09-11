@@ -11,7 +11,7 @@ import java.util.UUID;
 public class Main extends JavaPlugin {
 
     private static Main instance;
-    public static List<UUID> moderateur = new ArrayList<>();
+    public List<UUID> moderateur = new ArrayList<>();
 
     @Override
     public void onEnable() {

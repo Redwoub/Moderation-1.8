@@ -13,6 +13,7 @@ public class ReportCMD implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
+        String prefix = "§7[§6Modération§7]";
 
         if(!(sender instanceof Player)){
             sender.sendMessage("Seul un joueur peux executer cette commande !");
@@ -21,12 +22,12 @@ public class ReportCMD implements CommandExecutor {
 
         Player player = (Player) sender;
         if(args.length != 1){
-            player.sendMessage("§7[§6Modération§7] §cErreur §8: §e/report <player>");
+            player.sendMessage( prefix + " §cErreur §8: §e/report <player>");
             return false;
         }
 
         if(Bukkit.getPlayer(args[0]) == null){
-            player.sendMessage("§7[§6Modération§7] §cErreur §8: §cCe joueur n'existe pas !");
+            player.sendMessage(prefix + " §cErreur §8: §cCe joueur n'existe pas !");
             return false;
         }
 
