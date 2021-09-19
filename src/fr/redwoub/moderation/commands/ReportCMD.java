@@ -1,5 +1,6 @@
 package fr.redwoub.moderation.commands;
 
+import fr.redwoub.moderation.Main;
 import fr.redwoub.moderation.utils.ItemBuilder;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -13,7 +14,7 @@ public class ReportCMD implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
-        String prefix = "§7[§6Modération§7]";
+        String prefix = Main.getInstance().prefix;
 
         if(!(sender instanceof Player)){
             sender.sendMessage("Seul un joueur peux executer cette commande !");

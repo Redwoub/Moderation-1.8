@@ -3,9 +3,6 @@ version: 1.0
 author: Redwoub
 main: fr.redwoub.moderation.Main
 commands:
-  mod:
-    permission: moderation.mod
-    permission-message: §cVous n'avez pas la permisson d'executer cette commande.
   report:
   freeze:
     permission: moderation.freeze
@@ -13,3 +10,6 @@ commands:
   unfreeze:
     permission: moderation.unfreeze
     permission-message: §cVous n'avez pas la permisson d'executer cette commande.
+  vanish:
+    permission: moderation.vanish
+    permission-message: §cVous n'avez pas la permission d'executer cette commande.
