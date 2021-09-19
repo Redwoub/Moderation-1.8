@@ -1,0 +1,13 @@
+messages:
+  prefix: "&7[&6Moderation&7]"
+  player: "&cSeul un joueur peux executer cette commande"
+  vanish-off: "&cVous êtes à présent visible"
+  vanish-on: "&aVous êtes à présent invisible"
+  player-not-find: "&cCe joueur n'existe pas"
+  player-freeze: "&aVous avez freeze : &b"
+  target-freeze: "&cVous avez était freeze par : &a"
+  player-unfreeze: "&cVous avez unfreeze : &b"
+  target-unfreeze: "&aVous avez était unfreeze par : &c"
+  target-only-freeze: "&cErreur &8: &cCe joueur est deja freeze"
+  target-only-unfreeze: "&cErreur &8: &cCe joueur n'est pas freeze !"
+  target-move: "&cVous avez était freeze ! Vueillez vous rendre sur le discord &7: &e/discord"
